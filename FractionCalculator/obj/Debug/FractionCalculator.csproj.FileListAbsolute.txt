@@ -1,0 +1,9 @@
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\bin\Debug\FractionCalculator.exe.config
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\bin\Debug\FractionCalculator.exe
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\bin\Debug\FractionCalculator.pdb
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.csproj.AssemblyReference.cache
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.Properties.Resources.resources
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.csproj.GenerateResource.cache
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.csproj.CoreCompileInputs.cache
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.exe
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.pdb
