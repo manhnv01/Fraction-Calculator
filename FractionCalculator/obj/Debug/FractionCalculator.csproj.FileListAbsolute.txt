@@ -8,3 +8,4 @@ D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCa
 D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.exe
 D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.pdb
 D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.Home.resources
+D:\Code\ChuyenDeNganh\FractionCalculator\FractionCalculator\obj\Debug\FractionCalculator.KQRutGon.resources
