@@ -550,18 +550,17 @@ namespace FractionCalculator
         {
             Home_Load(sender, e);
             ToiGian(1);
-            panel.Visible = false;
         }
 
         private void btnTG2_Click(object sender, EventArgs e)
         {
             Home_Load(sender, e);
             ToiGian(2);
-            panel.Visible = false;
         }
 
         private void ToiGian(int number)
         {
+            panel.Visible = true;
             string sts = "";
             string sms = "";
             if (number == 1)
@@ -589,6 +588,9 @@ namespace FractionCalculator
                     int ms = int.Parse(sms);
                     int ucln = UCLN.UCLN_Sub(Math.Abs(ts), Math.Abs(ms));
 
+                    a.Text = "UCLN = " + ucln.ToString();
+                    panel2.Visible = false;
+
                     if (ms == 0)
                         MessageBox.Show("Mẫu số phải khác 0 !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     else if (ucln == 1 && (ts % ms) != 0)
@@ -597,6 +599,12 @@ namespace FractionCalculator
                     {
                         int tsrg = ts / ucln;
                         int msrg = ms / ucln;
+
+                        panel1.Visible = true;
+                        c.Text = Bracket(ts) + " : " + ucln;
+                        d.Text = Bracket(ms) + " : " + ucln;
+                        g.Text = tsrg.ToString();
+                        h.Text = msrg.ToString();
 
                         if (msrg < 0)
                         {
@@ -610,6 +618,8 @@ namespace FractionCalculator
 
                         if (tsrg % msrg == 0)
                         {
+                            up.Visible = true;
+                            j.Text = (tsrg / msrg).ToString();
                             rowValuesTS = new string[] { "", "", "", "", "", ts.ToString(), "", "" };
                             bracket = new string[] { "", "", "", "", "", "--------", "=", (tsrg / msrg).ToString() };
                             rowValuesMS = new string[] { "", "", "", "", "", ms.ToString(), "", "" };
