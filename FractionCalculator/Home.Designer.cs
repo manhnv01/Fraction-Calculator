@@ -63,6 +63,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.panel = new System.Windows.Forms.Panel();
             this.label17 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.a = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -93,16 +96,13 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label15 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).BeginInit();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtMS1
@@ -345,6 +345,33 @@
             this.label17.Size = new System.Drawing.Size(36, 38);
             this.label17.TabIndex = 5;
             this.label17.Text = "=";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Location = new System.Drawing.Point(3, 52);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(345, 36);
+            this.panel2.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(0, -3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(36, 38);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "=";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(36, -3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(270, 38);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "-----------------------";
             // 
             // a
             // 
@@ -706,33 +733,6 @@
             this.label15.TabIndex = 0;
             this.label15.Text = "Lịch sử";
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(3, 52);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(345, 36);
-            this.panel2.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(0, -3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 38);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "=";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(36, -3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(270, 38);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "-----------------------";
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -762,13 +762,13 @@
             this.panel1.PerformLayout();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistory)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

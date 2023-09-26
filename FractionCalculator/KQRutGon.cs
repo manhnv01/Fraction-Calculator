@@ -23,6 +23,7 @@ namespace FractionCalculator
         }
         public static string a;
         public static string b;
+        public static int fnumber;
         private List<int> FindCommonDivisors(Fraction fraction)
         {
             List<int> divisors = new List<int>();
@@ -53,31 +54,31 @@ namespace FractionCalculator
 
         private void UpdateDataGridView()
         {
-            dataGridView1.Rows.Clear();
+            dtgvKQ.Rows.Clear();
             foreach (var fraction in results)
             {
                 if (fraction.Numerator == fraction.Denominator)
                 {
-                    dataGridView1.Rows.Add("1");
+                    dtgvKQ.Rows.Add("1");
                     break;
                 }
                 // nếu mẫu bằng 1 thì in ra tử 
                 else if (fraction.Denominator == 1)
                 {
                     string formattedFraction1 = fraction.Numerator + "";
-                    dataGridView1.Rows.Add(formattedFraction1);
+                    dtgvKQ.Rows.Add(formattedFraction1);
                     break;
                 }
                 // nếu tử số = mẫu * -1 thì in ra -1
                 else if (fraction.Numerator == -1 * (fraction.Denominator))
                 {
-                    dataGridView1.Rows.Add("-1");
+                    dtgvKQ.Rows.Add("-1");
                     break;
                 }
                 else
                 {
                     string formattedFraction = fraction.Numerator + "/" + fraction.Denominator;
-                    dataGridView1.Rows.Add(formattedFraction);
+                    dtgvKQ.Rows.Add(formattedFraction);
                 }
             }
         }
@@ -155,6 +156,21 @@ namespace FractionCalculator
                 Denominator = denominator;
             }
 
+        }
+
+        private void dtgvKQ_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string kq = dtgvKQ.CurrentRow.Cells[0].Value.ToString();
+            char delimiter = '/'; // Ký tự phân cách
+            
+            Home form1 = new Home();
+            string[] substrings = kq.Split(delimiter);
+
+            if (substrings.Length == 1)
+                form1.SetFraction(fnumber, substrings[0], "1");
+            else
+                form1.SetFraction(fnumber, substrings[0], substrings[1]);
+            form1.Show();
         }
     }
 }

@@ -693,11 +693,18 @@ namespace FractionCalculator
                         MessageBox.Show("Mẫu số phải khác 0 !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     else
                     {
-                        KQRutGon.a = sts;
-                        KQRutGon.b = sms;
-                        KQRutGon form2 = new KQRutGon();
-                        form2.RGClick();
-                        form2.ShowDialog();
+                        int ucln = UCLN.UCLN_Sub(Math.Abs(ts), Math.Abs(ms));
+                        if (ucln == 1)
+                            MessageBox.Show("Phân số đã tối giản không thể rút gọn !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        else
+                        {
+                            KQRutGon.a = sts;
+                            KQRutGon.b = sms;
+                            KQRutGon.fnumber = number;
+                            KQRutGon form2 = new KQRutGon();
+                            form2.RGClick();
+                            form2.ShowDialog();
+                        }
                     }
                 }
                 catch (FormatException)
@@ -705,6 +712,20 @@ namespace FractionCalculator
                     panel.Visible = false;
                     MessageBox.Show("Không phải là số !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
+            }
+        }
+
+        public void SetFraction(int number, string ts, string ms)
+        {
+            if (number == 1)
+            {
+                txtTS1.Text = ts;
+                txtMS1.Text = ms;
+            }
+            else
+            {
+                txtTS2.Text = ts;
+                txtMS2.Text = ms;
             }
         }
     }
