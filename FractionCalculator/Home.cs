@@ -335,6 +335,7 @@ namespace FractionCalculator
         private void Calculate(int number)
         {
             panel.Visible = true;
+            panel2.Visible = true;
             // Lấy giá trị 2 phân số nhập vào
             string sts1 = txtTS1.Text.ToString();
             string sms1 = txtMS1.Text.ToString();
@@ -594,7 +595,11 @@ namespace FractionCalculator
                     if (ms == 0)
                         MessageBox.Show("Mẫu số phải khác 0 !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     else if (ucln == 1 && (ts % ms) != 0)
+                    {
+                        panel.Visible = false;
+                        panel1.Visible = false;
                         MessageBox.Show("Phân số đã tối giản !", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
                     else
                     {
                         int tsrg = ts / ucln;

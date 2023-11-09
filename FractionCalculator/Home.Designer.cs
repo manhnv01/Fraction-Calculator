@@ -130,7 +130,7 @@
             // btnDiv
             // 
             this.btnDiv.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiv.Location = new System.Drawing.Point(256, 511);
+            this.btnDiv.Location = new System.Drawing.Point(256, 591);
             this.btnDiv.Name = "btnDiv";
             this.btnDiv.Size = new System.Drawing.Size(227, 65);
             this.btnDiv.TabIndex = 6;
@@ -141,7 +141,7 @@
             // btnCommon
             // 
             this.btnCommon.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCommon.Location = new System.Drawing.Point(12, 599);
+            this.btnCommon.Location = new System.Drawing.Point(12, 679);
             this.btnCommon.Name = "btnCommon";
             this.btnCommon.Size = new System.Drawing.Size(226, 65);
             this.btnCommon.TabIndex = 4;
@@ -152,7 +152,7 @@
             // btnCompare
             // 
             this.btnCompare.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCompare.Location = new System.Drawing.Point(256, 599);
+            this.btnCompare.Location = new System.Drawing.Point(256, 679);
             this.btnCompare.Name = "btnCompare";
             this.btnCompare.Size = new System.Drawing.Size(227, 65);
             this.btnCompare.TabIndex = 4;
@@ -163,7 +163,7 @@
             // btnSub
             // 
             this.btnSub.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSub.Location = new System.Drawing.Point(11, 511);
+            this.btnSub.Location = new System.Drawing.Point(11, 591);
             this.btnSub.Name = "btnSub";
             this.btnSub.Size = new System.Drawing.Size(227, 65);
             this.btnSub.TabIndex = 4;
@@ -175,7 +175,7 @@
             // 
             this.btnReset.BackColor = System.Drawing.Color.Salmon;
             this.btnReset.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReset.Location = new System.Drawing.Point(256, 335);
+            this.btnReset.Location = new System.Drawing.Point(256, 415);
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(227, 69);
             this.btnReset.TabIndex = 5;
@@ -187,7 +187,7 @@
             // 
             this.btnReverse.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btnReverse.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReverse.Location = new System.Drawing.Point(12, 334);
+            this.btnReverse.Location = new System.Drawing.Point(12, 414);
             this.btnReverse.Name = "btnReverse";
             this.btnReverse.Size = new System.Drawing.Size(227, 70);
             this.btnReverse.TabIndex = 3;
@@ -198,7 +198,7 @@
             // btnMul
             // 
             this.btnMul.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMul.Location = new System.Drawing.Point(256, 423);
+            this.btnMul.Location = new System.Drawing.Point(256, 503);
             this.btnMul.Name = "btnMul";
             this.btnMul.Size = new System.Drawing.Size(227, 65);
             this.btnMul.TabIndex = 5;
@@ -209,7 +209,7 @@
             // btnSum
             // 
             this.btnSum.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSum.Location = new System.Drawing.Point(11, 423);
+            this.btnSum.Location = new System.Drawing.Point(11, 503);
             this.btnSum.Name = "btnSum";
             this.btnSum.Size = new System.Drawing.Size(227, 65);
             this.btnSum.TabIndex = 3;
@@ -521,7 +521,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(13, 14);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(227, 297);
+            this.groupBox1.Size = new System.Drawing.Size(227, 377);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Phân số 1";
@@ -530,11 +530,11 @@
             // 
             this.btnTG1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTG1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnTG1.Location = new System.Drawing.Point(121, 216);
+            this.btnTG1.Location = new System.Drawing.Point(16, 291);
             this.btnTG1.Name = "btnTG1";
-            this.btnTG1.Size = new System.Drawing.Size(87, 51);
+            this.btnTG1.Size = new System.Drawing.Size(192, 51);
             this.btnTG1.TabIndex = 70;
-            this.btnTG1.Text = "TG";
+            this.btnTG1.Text = "Tối giản";
             this.btnTG1.UseVisualStyleBackColor = false;
             this.btnTG1.Click += new System.EventHandler(this.btnTG1_Click);
             // 
@@ -543,9 +543,9 @@
             this.btnRG1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRG1.Location = new System.Drawing.Point(16, 216);
             this.btnRG1.Name = "btnRG1";
-            this.btnRG1.Size = new System.Drawing.Size(87, 51);
+            this.btnRG1.Size = new System.Drawing.Size(192, 51);
             this.btnRG1.TabIndex = 70;
-            this.btnRG1.Text = "RG";
+            this.btnRG1.Text = "Rút gọn";
             this.btnRG1.UseVisualStyleBackColor = false;
             this.btnRG1.Click += new System.EventHandler(this.btnRG1_Click);
             // 
@@ -558,7 +558,7 @@
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(257, 14);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(227, 297);
+            this.groupBox2.Size = new System.Drawing.Size(227, 377);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Phân số 2";
@@ -567,11 +567,11 @@
             // 
             this.btnTG2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnTG2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnTG2.Location = new System.Drawing.Point(123, 216);
+            this.btnTG2.Location = new System.Drawing.Point(18, 291);
             this.btnTG2.Name = "btnTG2";
-            this.btnTG2.Size = new System.Drawing.Size(87, 51);
+            this.btnTG2.Size = new System.Drawing.Size(189, 51);
             this.btnTG2.TabIndex = 70;
-            this.btnTG2.Text = "TG";
+            this.btnTG2.Text = "Tối giản";
             this.btnTG2.UseVisualStyleBackColor = false;
             this.btnTG2.Click += new System.EventHandler(this.btnTG2_Click);
             // 
@@ -580,9 +580,9 @@
             this.btnRG2.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.btnRG2.Location = new System.Drawing.Point(18, 216);
             this.btnRG2.Name = "btnRG2";
-            this.btnRG2.Size = new System.Drawing.Size(87, 51);
+            this.btnRG2.Size = new System.Drawing.Size(189, 51);
             this.btnRG2.TabIndex = 70;
-            this.btnRG2.Text = "RG";
+            this.btnRG2.Text = "Rút gọn";
             this.btnRG2.UseVisualStyleBackColor = false;
             this.btnRG2.Click += new System.EventHandler(this.btnRG2_Click);
             // 
@@ -737,7 +737,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1300, 685);
+            this.ClientSize = new System.Drawing.Size(1300, 761);
             this.Controls.Add(this.dgvHistory);
             this.Controls.Add(this.btnDiv);
             this.Controls.Add(this.groupBox4);
