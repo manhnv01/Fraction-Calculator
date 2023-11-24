@@ -733,5 +733,110 @@ namespace FractionCalculator
                 txtMS2.Text = ms;
             }
         }
+
+        private void txtMS1_TextChanged(object sender, EventArgs e)
+        {
+            string sms1 = txtMS1.Text.ToString();
+            try
+            {
+                int ms1 = int.Parse(sms1);
+                if (sms1 == "")
+                {
+                    errorProvider1.SetError(txtMS1, "Hãy nhập mẫu số phân số 1");
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (ms1 == 0)
+                {
+                    errorProvider1.SetError(txtMS1, "Mẫu số phải khác 0");
+                    MessageBox.Show("Mẫu số phải khác 0", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    errorProvider1.SetError(txtMS1, "");
+                }
+            }
+            catch (Exception ex)
+            {
+                errorProvider1.SetError(txtMS1, "Không phải là số!");
+                MessageBox.Show("Không phải là số!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        private void txtMS2_TextChanged(object sender, EventArgs e)
+        {
+            string sms2 = txtMS2.Text.ToString();
+            try
+            {
+                int ms2 = int.Parse(sms2);
+                if (sms2 == "")
+                {
+                    errorProvider1.SetError(txtMS2, "Hãy nhập mẫu số phân số 2");
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else if (ms2 == 0)
+                {
+                    errorProvider1.SetError(txtMS2, "Mẫu số phải khác 0");
+                    MessageBox.Show("Mẫu số phải khác 0", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    errorProvider1.SetError(txtMS2, "");
+                }
+            }
+            catch(Exception ex)
+            {
+                errorProvider1.SetError(txtMS2, "Không phải là số!");
+                MessageBox.Show("Không phải là số!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            
+        }
+
+        private void txtTS1_TextChanged(object sender, EventArgs e)
+        {
+            string sts1 = txtTS1.Text.ToString();
+            try
+            {
+                int ts1 = int.Parse(sts1);
+                if (sts1 == "")
+                {
+                    errorProvider1.SetError(txtTS1, "Hãy nhập tử số phân số 1");
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    errorProvider1.SetError(txtTS1, "");
+                }
+            }
+            catch (Exception ex)
+            {
+                errorProvider1.SetError(txtTS1, "Không phải là số!");
+                MessageBox.Show("Không phải là số!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+        }
+
+        private void txtTS2_TextChanged(object sender, EventArgs e)
+        {
+            string sts2 = txtTS2.Text.ToString();
+            try
+            {
+                int ts1 = int.Parse(sts2);
+                if (sts2 == "")
+                {
+                    errorProvider1.SetError(txtTS2, "Hãy nhập tử số phân số 2");
+                    MessageBox.Show("Vui lòng nhập đầy đủ thông tin !", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    errorProvider1.SetError(txtTS2, "");
+                }
+            }
+            catch (Exception ex)
+            {
+                errorProvider1.SetError(txtTS2, "Không phải là số!");
+                MessageBox.Show("Không phải là số!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
     }
 }
